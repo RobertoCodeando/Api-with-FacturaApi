@@ -17,6 +17,7 @@ const ROUTES = [
       },
     ],
   },
+  { path: '*', element: <ListUser /> },
 ];
 
 export default ROUTES;
