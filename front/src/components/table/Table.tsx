@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { Fragment, useMemo } from 'react';
 import styled, { Interpolation } from 'styled-components';
 import { Title } from '../titles/Titles';
 import { Box } from '../form/Form';
@@ -65,7 +65,7 @@ function Table({
 
   const tableBody = useMemo(
     () => rows!.map((row, index) => (
-      <>
+      <Fragment key={index}>
         <TR
           key={index}
           styles={{
@@ -88,7 +88,7 @@ function Table({
               </TableCell>
             </TR>
         ) : null)}
-      </>
+      </Fragment>
     )),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [rows, extraRow],
