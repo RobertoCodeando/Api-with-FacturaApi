@@ -75,7 +75,7 @@ const Login = () => {
                           textAlign: 'center',
                           marginTop: 40,
                         },
-                        children: 'Guardar',
+                        children: 'Entrar',
                         type: 'submit',
                         buttonType: 'primary',
                       },
