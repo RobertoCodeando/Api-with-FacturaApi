@@ -12,7 +12,7 @@ import FormEditUser from '../Forms/editUser/FormEditUser';
 
 const TEXT_TABLE_STYLE = { fontSize: '14px' };
 
-function ListUser() {
+const ListUser = () => {
   const [showForm, setShowForm] = useState(false);
   const [currentUser, setCurrentIndexUser] = useState<null | number>(null);
   const previousCurrentUser = useRef(currentUser);
@@ -113,6 +113,7 @@ function ListUser() {
           <div>Cargando</div>
         ) : (
           <div>
+            <Title styles={{ fontSize: '32px', color: '#008080', textAlign: 'center', marginTop: '1rem' }}> Lista de usuarios </Title>
             {hasData ? (
               <Table
                 headers={HEADERS_DATA}
@@ -127,6 +128,6 @@ function ListUser() {
       </Layout>
     </div>
   );
-}
+};
 
 export default ListUser;

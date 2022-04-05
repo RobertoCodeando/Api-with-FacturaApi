@@ -51,6 +51,7 @@ const Login = () => {
                         validationRegex: /^\S+@\S+\.\S+$/,
                         required: true,
                         type: 'email',
+                        value: 'uncorreo@dominio.com',
                         stylesInput: {
                           width: '100%',
                           marginTop: '2rem',
@@ -62,6 +63,7 @@ const Login = () => {
                         validationRegex: /^\w{6}/,
                         type: 'password',
                         required: true,
+                        value: '123456',
                         stylesInput: {
                           width: '100%',
                           marginTop: '2rem',
